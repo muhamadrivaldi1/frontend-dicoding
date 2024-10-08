@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dasar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+
+<body>
+    <!-- start header-nav -->
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="assets/image/Logo.jpeg" alt="mr" />
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#Home" onclick="smoothScroll(event, 'Home')">Home</a></li>
+                <li><a href="#About" onclick="smoothScroll(event, 'About')">About</a></li>
+                <li><a href="#Project" onclick="smoothScroll(event, 'Project')">Project</a></li>
+                <li><a href="#Contact" onclick="smoothScroll(event, 'Contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end header-nav-->
+
+    <!-- section start- main  -->
+    <section id="home">
+        <main>
+            <div class="content">
+                <div class="content-description">
+                    <h1 class="title">Muhamad Rivaldi</h1>
+                    <p>
+                        Hello everyone, I'm Muhamad Rivaldi, commonly called Rivaldi, I'm also studying at Pamulang
+                        University and I'm majoring in Informatics Engineering and I want to become a Fullstack Web
+                        Developer.
+                    </p>
+
+                    <button onclick="scrollToAbout()">Lebih lanjut</button>
+
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="About">
+        <h1 class="title">About Me</h1>
+        <div class="card">
+            <div class="content-image">
+                <img src="assets/image/Profil.jpeg" alt="Rivaldi" />
+            </div>
+            <p>
+                Hello everyone, I'm Muhamad Rivaldi who is usually called Rivaldi, I also studied at Pamulang University
+                and I majored in Informatics Engineering and I want to become a Fullstack Web developer, and I also like
+                to
+                learn new things. And I am also learning backend programming languages namely PHP, JavaScript and its
+                framworks such as Laravel, CodeIgniter and React.js
+            </p>
+    </section>
+
+    <section id="Project">
+        <h1 class="title">Project</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="assets/image/project1.png" alt="Project 1" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">Project ketika saya mengerjakan tugas tes magang di detik.com
+                        Source code bisa cek dibawah sini👇
+                    </p>
+                    <a href="https://github.com/muhamadrivaldi1/tugas-tes-magang.git" class="card-btn">Detail</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/image/lanjutan1.png" alt="Project 2" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">Lanjutan project ketika saya mengerjakan tugas tes magang di detik.com</p>
+                    <a href="https://github.com/muhamadrivaldi1/tugas-tes-magang.git" class="card-btn">Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="pengalaman">
+        <article class="pengalaman">
+            <h2>Pengalaman Kerja</h2>
+            <p>
+                Saya telah terlibat dalam berbagai proyek pengembangan web baik frontend maupun backend. Pengalaman ini
+                mencakup:
+            </p>
+            <ul>
+                <li>
+                    <strong>Intern di Detik.com</strong>: Terlibat dalam pengembangan aplikasi web untuk tugas tes
+                    magang.
+                </li>
+                <li>
+                    <strong>Kerja Praktek di SMKN 8 Tagsel</strong>: Merancang dan membuat absensi berbasis foto selfie
+                    dan GPS.
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="assets/image/kerjaPraktek1.jpg" alt="kp 1" class="card-img">
+                            <div class="card-body">
+                                <p>Foto saat membuat sistem absensi berbasis GPS</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/image/kerjaPraktek2.jpg" alt="kp 2" class="card-img">
+                            <div class="card-body">
+                                <p>Desain aplikasi absensi berbasis foto selfie</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <strong>Proyek Open Source</strong>: Berkontribusi dalam proyek-proyek open source di GitHub.
+                </li>
+            </ul>
+            <p>
+                Melalui pengalaman ini, saya belajar banyak tentang pengembangan web, kolaborasi tim, dan teknologi
+                terbaru.
+            </p>
+        </article>
+
+
+
+        <aside class="informasi-tambahan">
+            <h2>Hobi</h2>
+            <p>Di luar pengembangan web, saya juga tertarik pada</p>
+            <ul>
+                <li>Sepak Bola</li>
+                <div class="card">
+                    <img src="assets/image/sepakbola.jpg" alt="bolajuara" class="card-img">
+                    <div class="card-body">
+                        <p>Juara saat kompetisi antar kampung</p>
+                    </div>
+                </div>
+                <li>Futsal</li>
+                <li>Badminton</li>
+                <li>Membaca blog tentang teknologi dan mengikuti berita industri terkini</li>
+            </ul>
+        </aside>
+        </main>
+        <!-- end section-main -->
+
+        <!-- start footer, -->
+        <section id="Contact">
+            <footer>
+                <h2>Informasi kontak</h2>
+                <p>Anda dapat menghubungi saya melalui platform berikut</p>
+                <div class="social-media">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/muhamad-rivaldi-330b79271"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/087782881451"><i class="fab fa-whatsapp"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/muhamadrivalldi_"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/muhamadrivaldi1" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </footer>
+        </section>
+        <!-- end footer -->
+
+        <script src="assets/script.js"></script>
+</body>
+
+</html>

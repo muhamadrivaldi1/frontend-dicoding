@@ -2,147 +2,315 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Dasar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banten</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
 </head>
 
 <body>
-    <!-- start header-nav -->
+    <!-- mulai header -->
     <header class="navbar-container">
-        <div class="logo">
-            <img src="assets/image/Logo.jpeg" alt="mr" />
-        </div>
         <nav class="nav-list">
             <ul>
                 <li><a href="#Home" onclick="smoothScroll(event, 'Home')">Home</a></li>
-                <li><a href="#About" onclick="smoothScroll(event, 'About')">About</a></li>
-                <li><a href="#Project" onclick="smoothScroll(event, 'Project')">Project</a></li>
+                <li><a href="#Tentang" onclick="smoothScroll(event, 'Tentang')">Tentang</a></li>
+                <li><a href="#Keindahan Alam" onclick="smoothScroll(event, 'Keindahan Alam')">Keindahan Alam</a></li>
+                <li><a href="#Warisan Budaya" onclick="smoothScroll(event, 'Warisan Budaya')">Warisan Budaya</a></li>
+                <li><a href="#Kuliner Khas" onclick="smoothScroll(event, 'Kuliner Khas')">Kuliner Khas</a></li>
                 <li><a href="#Contact" onclick="smoothScroll(event, 'Contact')">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <!-- end header-nav-->
+    <!-- akhir header -->
 
-    <!-- section start- main  -->
     <section id="home">
         <main>
             <div class="content">
-                <div class="content-description">
-                    <h1 class="title">Muhamad Rivaldi</h1>
-                    <p>
-                        Hello everyone, I'm Muhamad Rivaldi, commonly called Rivaldi, I'm also studying at Pamulang
-                        University and I'm majoring in Informatics Engineering and I want to become a Fullstack Web
-                        Developer.
-                    </p>
-                    <button onclick="scrollToAbout()">Lebih lanjut</button>
-                </div>
+                <h1>BANTEN</h1>
+                <img src="assets/image/Banten3.jpeg" alt="Banten Logo">
+                <p>Banten, sebuah provinsi yang terletak di ujung barat Pulau Jawa, dikenal dengan keindahan alamnya
+                    yang menakjubkan dan kekayaan budaya yang kaya.</p>
             </div>
-        </main>
-    </section>
 
-    <section id="About">
-        <h1 class="title">About Me</h1>
-        <div class="card">
-            <div class="content-image">
-                <img src="assets/image/Profil.jpeg" alt="Rivaldi" />
-            </div>
-            <p>
-                Hello everyone, I'm Muhamad Rivaldi who is usually called Rivaldi, I also studied at Pamulang University
-                and I majored in Informatics Engineering and I want to become a Fullstack Web developer, and I also like
-                to
-                learn new things. And I am also learning backend programming languages namely PHP, JavaScript and its
-                framworks such as Laravel, CodeIgniter and React.js
-            </p>
-    </section>
+            <section id="Tentang">
+                <h2>Tentang Banten</h2>
+                <p>Banten adalah sebuah provinsi di ujung barat Pulau Jawa yang dikenal dengan kekayaan sejarah, budaya,
+                    dan keindahan alamnya. Sebagai salah satu wilayah yang pernah menjadi pusat perdagangan dan
+                    pelabuhan utama di masa Kesultanan Banten, provinsi ini memiliki banyak peninggalan sejarah yang
+                    menarik untuk dikunjungi. Kota Serang, sebagai ibu kota Banten, menyimpan berbagai destinasi wisata
+                    sejarah seperti Masjid Agung Banten dan Benteng Speelwijk, yang merupakan saksi bisu dari masa
+                    kejayaan Banten sebagai pusat perdagangan maritim. Sejarah panjang ini menjadikan Banten sebagai
+                    tempat yang kaya akan nilai budaya dan tradisi.</p><br>
 
-    <section id="Project">
-        <h1 class="title">Project</h1>
-        <div class="card-container">
-            <div class="card">
-                <img src="assets/image/project1.png" alt="Project 1" class="card-img">
-                <div class="card-body">
-                    <h5 class="card-title">Project 1</h5>
-                    <p class="card-text">Project ketika saya mengerjakan tugas tes magang di detik.com
-                        Source code bisa cek dibawah sini👇
-                    </p>
-                    <a href="https://github.com/muhamadrivaldi1/tugas-tes-magang.git" class="card-btn">Detail</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/image/lanjutan1.png" alt="Project 2" class="card-img">
-                <div class="card-body">
-                    <h5 class="card-title">Project 2</h5>
-                    <p class="card-text">Lanjutan project ketika saya mengerjakan tugas tes magang di detik.com</p>
-                    <a href="https://github.com/muhamadrivaldi1/tugas-tes-magang.git" class="card-btn">Detail</a>
-                </div>
-            </div>
-        </div>
-    </section>
+                <p>Selain peninggalan sejarah, Banten juga menawarkan keindahan alam yang memukau. Pantai-pantainya
+                    yang eksotis seperti Pantai Anyer dan Tanjung Lesung sering menjadi tujuan wisatawan lokal maupun
+                    mancanegara. Tidak hanya itu, Banten juga menjadi rumah bagi Taman Nasional Ujung Kulon, yang
+                    terkenal sebagai habitat bagi badak Jawa yang langka. Wilayah pegunungan dan air terjun di kawasan
+                    ini juga menjadi daya tarik wisatawan yang mencari pengalaman alam yang menenangkan. Keindahan alam
+                    Banten tidak hanya memanjakan mata, tetapi juga menjadi tempat yang sempurna untuk relaksasi dan
+                    petualangan.</p><br>
 
-    <article class="pengalaman">
-        <article class="pengalaman">
-            <h2>Pengalaman Kerja</h2>
-            <p>
-                Saya telah terlibat dalam berbagai proyek pengembangan web baik frontend maupun backend. Pengalaman ini
-                mencakup:
-            </p>
-            <ul>
-                <li>
-                    <strong>Intern di Detik.com</strong>: Terlibat dalam pengembangan aplikasi web untuk tugas tes
-                    magang.
-                </li>
-                <li>
-                    <strong>Kerja Praktek di SMKN 8 Tagsel</strong>: Merancang dan membuat absensi berbasis foto selfie
-                    dan GPS.
-                    <div class="card-container">
-                        <div class="card">
-                            <img src="assets/image/kerjaPraktek1.jpg" alt="kp 1" class="card-img">
-                            <div class="card-body">
-                                <p>Foto saat membuat sistem absensi berbasis GPS</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="assets/image/kerjaPraktek2.jpg" alt="kp 2" class="card-img">
-                            <div class="card-body">
-                                <p>Desain aplikasi absensi berbasis foto selfie</p>
-                            </div>
+                <p>Di samping itu, Banten juga dikenal dengan tradisi dan budayanya yang unik. Beragam kesenian
+                    tradisional, seperti debus dan tari-tarian daerah, masih dilestarikan hingga saat ini dan sering
+                    ditampilkan pada acara-acara kebudayaan lokal. Kuliner khas Banten, seperti sate bandeng dan rabeg,
+                    juga menjadi bagian tak terpisahkan dari kekayaan budaya yang dimiliki provinsi ini. Dengan
+                    kombinasi sejarah, alam, dan budaya yang begitu kaya, Banten menawarkan pengalaman wisata yang
+                    lengkap bagi para pengunjung yang ingin menjelajahi pesona Indonesia yang autentik.</p><br>
+            </section>
+
+            <section id="Keindahan Alam">
+                <h2>Keindahan Alam</h2>
+                <p>Banten memiliki keindahan alam yang luar biasa, menawarkan beragam destinasi alam yang menakjubkan
+                    bagi para pengunjung. Pantai Anyer, salah satu pantai yang paling terkenal, menyajikan panorama laut
+                    yang jernih dan pasir putih yang lembut, menjadikannya tempat favorit bagi wisatawan untuk bersantai
+                    dan menikmati matahari terbenam. Selain Anyer, ada juga Tanjung Lesung yang menawarkan suasana
+                    pantai yang lebih tenang dengan keindahan bawah laut yang cocok untuk snorkeling dan menyelam. Tak
+                    hanya pantai, Banten juga memiliki kawasan pegunungan yang sejuk seperti Gunung Karang dan Gunung
+                    Pulosari, yang cocok untuk aktivitas pendakian bagi pecinta alam.</p><br>
+
+                <p>Di sisi lain, Banten juga menjadi rumah bagi Taman Nasional Ujung Kulon, yang merupakan situs
+                    warisan dunia UNESCO. Taman nasional ini terkenal sebagai habitat badak Jawa yang sangat langka dan
+                    dilindungi. Selain itu, taman ini menawarkan keindahan alam liar berupa hutan hujan tropis,
+                    sungai-sungai, serta pantai-pantai yang masih alami. Air terjun Curug Putri dan Curug Gendang di
+                    wilayah ini juga menarik banyak wisatawan yang ingin menikmati keindahan air terjun yang tersembunyi
+                    di tengah alam. Kombinasi dari pantai, gunung, dan hutan tropis membuat Banten menjadi salah satu
+                    destinasi alam terindah di Indonesia.</p><br>
+
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img src="assets/image/anyer.jpeg" alt="Pantai Anyer" class="card-img">
+                        <div class="card-content">
+                            <h2>Pantai Anyer</h2>
+                            <p>Pantai yang indah di Banten dengan pasir putih dan pemandangan sunset yang menakjubkan.
+                            </p>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <strong>Proyek Open Source</strong>: Berkontribusi dalam proyek-proyek open source di GitHub.
-                </li>
-            </ul>
-            <p>
-                Melalui pengalaman ini, saya belajar banyak tentang pengembangan web, kolaborasi tim, dan teknologi
-                terbaru.
-            </p>
-        </article>
 
-        <aside class="informasi-tambahan">
-            <h2>Hobi</h2>
-            <p>Di luar pengembangan web, saya juga tertarik pada</p>
-            <ul>
-                <li>Sepak Bola</li>
-                <div class="card">
-                    <img src="assets/image/sepakbola.jpg" alt="bolajuara" class="card-img">
-                    <div class="card-body">
-                        <p>Juara saat kompetisi antar kampung</p>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <img src="assets/image/Tanjung lesung.jpeg" alt="Tanjung Lesung" class="card-img">
+                        <div class="card-content">
+                            <h2>Pantai Tanjung Lesung</h2>
+                            <p>Pantai dengan suasana tenang, ideal untuk snorkeling dan menyelam.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <img src="assets/image/sawarna.jpg" alt="sawarna" class="card-img">
+                        <div class="card-content">
+                            <h2>Pantai Sawarna</h2>
+                            <p>Pantai dengan suasana obak yang cukup besar, kurang cocok untuk snorkeling dan menyelam,
+                                lebih cocok untuk surving atau berselancar</p>
+                        </div>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="card">
+                        <img src="assets/image/gunung karang.jpg" alt="Gunung Karang" class="card-img">
+                        <div class="card-content">
+                            <h2>Gunung Karang</h2>
+                            <p>Gunung Karang menawarkan panorama alam yang mempesona, cocok untuk pendaki yang ingin
+                                menikmati keindahan alam Banten dari ketinggian.</p>
+                        </div>
+                    </div>
+
+                    <!-- card 5 -->
+                    <div class="card">
+                        <img src="assets/image/gunung pulosari.jpeg" alt="Gunung Pulosari" class="card-img">
+                        <div class="card-content">
+                            <h2>Gunung Pulosari</h2>
+                            <p>Gunung Pulosari adalah destinasi mendaki yang menarik dengan jalur yang menantang dan
+                                pemandangan alam yang indah di sepanjang perjalanan.</p>
+                        </div>
+                    </div>
+
+                    <!-- card 6 -->
+                    <div class="card">
+                        <img src="assets/image/taman nasional ujung kulon.jpeg" alt="Taman Nasional Ujung Kulon"
+                            class="card-img">
+                        <div class="card-content">
+                            <h2>Taman Nasional Ujung Kulon</h2>
+                            <p>Taman Nasional Ujung Kulon adalah salah satu situs warisan dunia, rumah bagi satwa langka
+                                seperti badak bercula satu, dengan keindahan alam yang tak tertandingi.</p>
+                        </div>
                     </div>
                 </div>
-                <li>Futsal</li>
-                <li>Badminton</li>
-                <li>Membaca blog tentang teknologi dan mengikuti berita industri terkini</li>
-            </ul>
-        </aside>
-        </main>
-        <!-- end section-main -->
+            </section>
 
-        <!-- start footer, -->
+            <section id="Warisan Budaya">
+                <h2>Warisan Budaya Banten</h2>
+                <p> Banten memiliki kekayaan budaya yang sangat beragam, yang mencerminkan sejarah panjang provinsi ini
+                    sebagai pusat perdagangan dan interaksi antar budaya di masa lalu. Salah satu warisan budaya yang
+                    terkenal adalah Debus, seni bela diri tradisional yang sering kali diiringi oleh pertunjukan
+                    kekebalan fisik yang ekstrem. Selain Debus, Banten juga terkenal dengan tradisi Suku Baduy,
+                    masyarakat adat yang masih memegang teguh adat istiadat dan cara hidup yang sederhana serta bersatu
+                    dengan alam. Suku Baduy mempraktikkan gaya hidup yang jauh dari modernisasi, memberikan kita wawasan
+                    tentang kehidupan manusia yang harmonis dengan alam.</p><br>
+
+                <p>Selain seni dan tradisi, Banten juga memiliki warisan budaya arsitektur seperti Masjid Agung Banten,
+                    yang dibangun pada abad ke-16 dan mencerminkan pengaruh budaya Islam yang kuat di daerah ini. Masjid
+                    ini merupakan salah satu situs penting di Banten Lama, yang dulunya adalah pusat kerajaan Islam
+                    Banten. Dengan ciri khas menara yang mirip dengan pagoda, masjid ini memperlihatkan bagaimana
+                    berbagai budaya bercampur di Banten.</p><br>
+
+                <p>Tak hanya itu, berbagai upacara adat, seperti Seren Taun yang diadakan oleh masyarakat Baduy, juga
+                    menjadi bagian penting dari identitas budaya Banten. Seren Taun merupakan ritual tahunan sebagai
+                    ungkapan rasa syukur kepada Sang Pencipta atas hasil panen. Semua aspek ini menunjukkan betapa
+                    kayanya Banten dalam hal warisan budaya, yang masih dilestarikan hingga kini oleh masyarakatnya.</p><br>
+
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img src="assets/image/debus.jpeg" alt="Debus" class="card-img">
+                        <div class="card-content">
+                            <h2>Debus</h2>
+                            <p>Pertunjukan tradisional bela diri yang menampilkan kekuatan fisik luar biasa, sering kali
+                                disertai aksi ekstrem yang menunjukkan kekebalan terhadap senjata tajam dan api.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <img src="assets/image/Banten 1.jpeg" alt="Masjid Agung Banten" class="card-img">
+                        <div class="card-content">
+                            <h2>Masjid Agung Banten</h2>
+                            <p>
+                                Sebuah bangunan bersejarah yang menjadi ikon arsitektur Islam klasik di Banten,
+                                dibangun pada abad ke-16, mencerminkan perpaduan budaya lokal dan pengaruh luar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <img src="assets/image/suku baduy.jpeg" alt="Suku Baduy" class="card-img">
+                        <div class="card-content">
+                            <h2>Suku Baduy</h2>
+                            <p>
+                                Masyarakat adat yang hidup dalam harmoni dengan alam, memegang teguh tradisi
+                                nenek moyang mereka, dan menolak modernisasi untuk menjaga keseimbangan
+                                kehidupan sederhana mereka.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <img src="assets/image/Seren taun.jpeg" alt="Seren taun" class="card-img">
+                        <div class="card-content">
+                            <h2>Seren Tau</h2>
+                            <p>Pantai yang indah di Banten dengan pasir putih dan pemandangan sunset yang
+                                menakjubkan.
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="Kuliner Khas">
+                <h2>Kuliner Khas</h2>
+                <P>Banten memiliki ragam kuliner khas yang menggugah selera, mencerminkan kekayaan budaya dan warisan
+                    kuliner lokal. Salah satu hidangan yang sangat terkenal adalah Sate Bandeng, yang unik karena
+                    menggunakan ikan bandeng yang diolah menjadi sate. Proses pembuatan Sate Bandeng ini cukup menarik,
+                    di mana duri-duri bandeng dihilangkan dengan teknik khusus, kemudian dagingnya dibumbui dan
+                    dipanggang hingga matang. Hidangan ini menjadi favorit banyak orang, terutama karena tekstur bandeng
+                    yang lembut berpadu dengan rasa bumbu khas yang meresap sempurna.</P><br>
+
+                    <p>Selain itu, Rabeg adalah salah satu kuliner legendaris dari Banten yang berbahan dasar daging
+                    kambing. Makanan ini memiliki cita rasa gurih dengan rempah-rempah yang kaya, serta disajikan dalam
+                    kuah kental. Rabeg biasanya disajikan pada acara-acara spesial seperti hajatan atau perayaan
+                    keagamaan, dan telah menjadi simbol kemewahan kuliner di daerah tersebut. Cita rasa Rabeg yang khas
+                    menjadikannya salah satu hidangan yang wajib dicoba ketika berkunjung ke Banten.</p><br>
+
+                    <p>Tak ketinggalan, Nasi Uduk Banten juga merupakan sajian yang populer di kalangan masyarakat
+                    setempat. Nasi yang dimasak dengan santan dan rempah-rempah ini biasanya disajikan dengan lauk pauk
+                    seperti ayam goreng, tempe, dan sambal yang pedas. Kelezatan nasi uduk ini terletak pada aroma harum
+                    dari santan yang meresap ke dalam nasi, memberikan rasa gurih yang menggoda. Hidangan ini sering
+                    disajikan sebagai menu sarapan atau makan siang, menawarkan cita rasa yang sederhana namun
+                    memuaskan.</p><br>
+
+                    <p>Selain hidangan berat, Banten juga dikenal dengan jajanan tradisional yang lezat. Salah satunya
+                    adalah Opak Banten, sejenis kerupuk yang terbuat dari singkong atau ketan yang dipipihkan dan
+                    dipanggang hingga kering. Opak ini memiliki tekstur renyah dan sering dinikmati sebagai camilan atau
+                    pendamping nasi. Rasanya yang gurih dan renyah menjadikannya favorit di berbagai acara adat maupun
+                    sehari-hari.</p><br>
+
+                    <p>Terakhir, Jojorong salah satu kudapan manis khas Banten yang sayang untuk dilewatkan.
+                    Kue ini terbuat dari tepung beras, gula aren, dan santan yang disajikan dalam daun pisang. Rasa
+                    manis dari gula aren dan gurih dari santan berpadu sempurna di setiap gigitannya, membuat kue
+                    jojorong menjadi salah satu ikon kuliner tradisional Banten yang masih digemari hingga kini.</p><br>
+
+                    <p>Dengan kekayaan kuliner yang beragam, Banten menawarkan cita rasa yang memanjakan lidah, mulai dari
+                    makanan berat hingga jajanan tradisional yang menggugah selera.</p><br>
+
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img src="assets/image/sate bandeng.jpeg" alt="Sate Bandeng" class="card-img">
+                        <div class="card-content">
+                            <h2>Sate Bandeng</h2>
+                            <p>Sate Bandeng adalah hidangan khas Banten dari ikan bandeng yang dibumbui dan
+                                dipanggang setelah durinya dihilangkan. Teksturnya lembut dengan rasa gurih yang kaya,
+                                menjadikannya kuliner unik dan populer di daerah ini.</p>
+                        </div>
+                    </div>
+
+                    <!-- cadr 2 -->
+                    <div class="card">
+                        <img src="assets/image/Rabeg khas banten.jpg" alt="Rabeg banten" class="card-img">
+                        <div class="card-content">
+                            <h2>Rabeg Khas Banten</h2>
+                            <p>Rabeg adalah masakan khas Banten berbahan dasar daging kambing yang dimasak dengan
+                                rempah-rempah kaya rasa. Kuahnya kental dan gurih, sering disajikan pada acara-acara
+                                spesial. Rasanya yang kuat menjadikan Rabeg salah satu kuliner legendaris dari Banten.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="card">
+                        <img src="assets/image/Nasi uduk.jpeg" alt="Nasi uduk" class="card-img">
+                        <div class="card-content">
+                            <h2>Nasi Uduk</h2>
+                            <p>Nasi Uduk Banten adalah nasi yang dimasak dengan santan dan rempah-rempah,
+                                menghasilkan rasa gurih dan aroma yang harum. Biasanya disajikan dengan lauk seperti
+                                ayam goreng, tempe, dan sambal, hidangan ini populer sebagai sarapan atau makan siang di
+                                Banten.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="card">
+                        <img src="assets/image/opak khas banten.jpg" alt="Opak Banten" class="card-img">
+                        <div class="card-content">
+                            <h2>Opak Banten</h2>
+                            <p>Opak Banten adalah camilan tradisional berbahan dasar beras ketan yang dipanggang
+                                hingga renyah. Opak ini memiliki tekstur ringan dan rasa gurih, sering dinikmati sebagai
+                                teman makan atau camilan sehari-hari di Banten.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- card 5 -->
+                    <div class="card">
+                        <img src="assets/image/kue jojorong.jpg" alt="Kue Jojorong" class="card-img">
+                        <div class="card-content">
+                            <h2>Kue Jojorong</h2>
+                            <p>Kue Jojorong adalah kue tradisional khas Banten yang terbuat dari campuran tepung
+                                beras dan gula merah, disajikan dalam daun pisang. Kue ini memiliki tekstur lembut
+                                dengan rasa manis legit dari gula merah yang lumer di dalamnya, menjadikannya salah satu
+                                camilan yang digemari di Banten.
+                            </p>
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+
         <section id="Contact">
             <footer>
                 <h2>Informasi kontak</h2>
@@ -167,9 +335,11 @@
                     </ul>
                 </div>
             </footer>
-        </section>
-        <!-- end footer -->
 
+            <h2>Kontak</h2>
+            <p>Untuk informasi lebih lanjut, silakan hubungi kami di <a
+                    href="mailto:info@banten.com">info@banten.com</a>.</p>
+        </section>
         <script src="assets/script.js"></script>
 </body>
 

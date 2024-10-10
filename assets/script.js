@@ -1,5 +1,5 @@
 function scrollToAbout() {
-  document.getElementById('About').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('Tentang').scrollIntoView({ behavior: 'smooth' });
 }
 
 function smoothScroll(event, sectionId) {
@@ -11,3 +11,5 @@ function smoothScroll(event, sectionId) {
       });
   }
 }
+
+

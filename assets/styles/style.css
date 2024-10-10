@@ -76,14 +76,14 @@ main {
 h1 {
   font-size: 2.5em;
   /* Ukuran font untuk judul */
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   /* Jarak antara judul dan paragraf */
 }
 
 h2 {
   font-size: 2em;
   /* Ukuran font untuk subjudul */
-  margin: 20px 0;
+  margin: 30px 0;
   /* Jarak atas/bawah untuk subjudul */
   border-bottom: 2px solid #333;
   /* Garis bawah untuk subjudul */
@@ -143,6 +143,63 @@ a:hover {
   text-align: center;
 }
 
+#Hubungi\ Kami h2 {
+  text-align: center;
+  border-bottom: none; /* Menghapus garis bawah khusus untuk "Hubungi Kami" */
+  padding-bottom: 0; /*Menghapus padding bawah jika tidak diperlukan */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#HubungiKami h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #f8f8f8;
+  border-bottom: none; /* Menghapus garis bawah hanya di bagian Hubungi Kami */
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-media li {
+  display: inline-block;
+}
+
+.social-media a {
+  color: white;
+  font-size: 1.8em;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #1dbf73; /* Mengubah warna ikon saat hover */
+}
+
+footer a {
+  color: #1dbf73;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f8f8f8; /* Mengubah warna saat hover */
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .card-container {
@@ -170,7 +227,6 @@ a:hover {
   }
 }
 
-
 /* Responsif */
 @media (max-width: 768px) {
   .nav-list ul li {
@@ -193,5 +249,30 @@ a:hover {
   h2 {
     font-size: 1.5em;
     /* Ukuran font lebih kecil untuk subjudul pada layar kecil */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .social-media ul {
+      flex-direction: row; /* Membuat elemen tersusun secara horizontal */
+      gap: 15px; /* Menjaga jarak antar ikon */
+      justify-content: center; /* Mengatur ikon berada di tengah secara horizontal */
+      align-items: center; /* Mengatur posisi vertikal ikon agar rata */
+  }
+}
+
+
+@media (max-width: 480px) {
+  #HubungiKami h2 {
+      font-size: 1.5em;
+  }
+
+  .social-media a {
+      font-size: 1.5em;
+  }
+
+  footer p {
+      font-size: 1em;
   }
 }

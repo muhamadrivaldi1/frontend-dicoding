@@ -7,7 +7,7 @@ function scrollToAbout() {
 }
 
 function smoothScroll(event, sectionId) {
-  event.preventDefault(); // Prevent default anchor behavior
+  event.preventDefault(); 
   const section = document.getElementById(sectionId);
   if (section) {
       section.scrollIntoView({ 

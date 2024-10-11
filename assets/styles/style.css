@@ -7,103 +7,74 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-image: ('assets/image/Banten 1.jpeg');
-  color: #333;
-  /* Warna teks */
+  color: #333; 
 }
 
-/* Gaya untuk header dan navigasi */
+
 .navbar-container {
-  background-color: #333;
-  /* Warna latar belakang header */
-  padding: 10px 0;
+  background-color: #333; 
+    padding: 10px 0;
 }
 
 .nav-list ul {
-  list-style-type: none;
-  /* Menghapus bullet point */
-  text-align: center;
-  /* Menyelaraskan daftar ke tengah */
+  list-style-type: none; 
+  text-align: center; 
 }
 
 .nav-list ul li {
-  display: inline;
-  /* Menampilkan item daftar secara horizontal */
-  margin-right: 20px;
-  /* Jarak antara item */
+  display: inline; /* Menampilkan item daftar secara horizontal */
+  margin-right: 20px; /* Jarak antara item */
 }
 
 .nav-list ul li a {
-  color: #fff;
-  /* Warna teks tautan */
-  text-decoration: none;
-  /* Menghapus garis bawah */
-  padding: 8px 16px;
-  /* Ruang di sekitar teks */
-  transition: background-color 0.3s;
-  /* Efek transisi saat hover */
+  color: #fff; /* Warna teks tautan */
+  text-decoration: none; /* Menghapus garis bawah */
+  padding: 8px 16px; /* Ruang di sekitar teks */
+  transition: background-color 0.3s; /* Efek transisi saat hover */
 }
 
 .nav-list ul li a:hover {
-  background-color: #575757;
-  /* Warna latar belakang saat hover */
-  border-radius: 4px;
-  /* Sudut yang membulat */
+  background-color: #575757; /* Warna latar belakang saat hover */
+  border-radius: 4px; /* Sudut yang membulat */
 }
 
 /* Gaya untuk konten utama */
 main {
-  max-width: 1200px;
-  /* Lebar maksimum untuk konten */
-  margin: 20px auto;
-  /* Mengatur margin atas/bawah dan tengah */
+  max-width: 1200px; /* Lebar maksimum untuk konten */
+  margin: 20px auto; /* Mengatur margin atas/bawah dan tengah */
   padding: 20px;
-  background: #fff;
-  /* Warna latar belakang konten */
-  border-radius: 8px;
-  /* Sudut membulat */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  /* Efek bayangan */
+  background: #fff; /* Warna latar belakang konten */
+  border-radius: 8px; /* Sudut membulat */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
 }
 
 .content {
-  text-align: center;
-  /* Menyelaraskan teks di tengah */
-  margin-bottom: 40px;
-  /* Jarak antara bagian atas konten dan bagian lainnya */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  margin-bottom: 40px; /* Jarak antara bagian atas konten dan bagian lainnya */
 }
 
 h1 {
-  font-size: 2.5em;
-  /* Ukuran font untuk judul */
-  margin-bottom: 35px;
-  /* Jarak antara judul dan paragraf */
+  font-size: 2.5em; /* Ukuran font untuk judul */
+  margin-bottom: 35px; /* Jarak antara judul dan paragraf */
 }
 
 h2 {
-  font-size: 2em;
-  /* Ukuran font untuk subjudul */
-  margin: 30px 0;
-  /* Jarak atas/bawah untuk subjudul */
-  border-bottom: 2px solid #333;
-  /* Garis bawah untuk subjudul */
-  padding-bottom: 10px;
-  /* Ruang di bawah subjudul */
+  font-size: 1.5em; /* Ukuran font untuk subjudul */
+  margin: 30px 0; /* Jarak atas/bawah untuk subjudul */
+  border-bottom: 2px solid #333; /* Garis bawah untuk subjudul */
+  padding-bottom: 10px; /* Ruang di bawah subjudul */
 }
 
 section {
-  margin-bottom: 60px;
-  /* Jarak antara bagian */
+  margin-bottom: 60px; /* Jarak antara bagian */
 }
 
 a {
-  color: #333;
-  /* Warna tautan */
+  color: #333; /* Warna tautan */
 }
 
 a:hover {
-  text-decoration: underline;
-  /* Garis bawah saat hover */
+  text-decoration: underline; /* Garis bawah saat hover */
 }
 
 /* Global styling for cards */
@@ -116,8 +87,8 @@ a:hover {
 }
 
 .card {
-  flex: 1 1 300px; /* Ensures each card takes equal width but minimum 300px */
-  max-width: 300px; /* Prevents the card from stretching too wide */
+  flex: 1 1 300px; 
+  max-width: 300px;
   background-color: #f5f5f5;
   border-radius: 10px;
   overflow: hidden;
@@ -129,13 +100,13 @@ a:hover {
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Adds a hover effect */
+  transform: translateY(-10px); 
 }
 
 .card-img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Ensures the image fits well without distortion */
+  object-fit: cover;
 }
 
 .card-content {
@@ -143,10 +114,150 @@ a:hover {
   text-align: center;
 }
 
-#Hubungi\ Kami h2 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Atur tata letak utama menggunakan Flexbox */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex: 1;
+  margin-right: 20px;
+  
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Mengatur agar card berada di tengah secara horizontal */
+  align-items: center; /* Mengatur agar card berada di tengah secara vertikal */
+  min-height: 100vh; /* Mengatur tinggi container agar penuh di layar */
+  padding: 20px; /* Padding untuk jarak */
+  background-color: #f0f0f0;
+}
+
+/* Sidebar card styling */
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Untuk menambahkan elemen interaktif seperti animasi */
+}
+
+/* Hover effect pada card untuk interaksi */
+.sidebar:hover {
+  transform: translateY(-10px); /* Efek melayang saat hover */
+  box-shadow: -2px 0 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+/* Heading styles */
+.sidebar h3,
+.sidebar h4 {
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: color 0.3s ease; /* Transisi halus pada warna */
+}
+
+.sidebar h3:hover,
+.sidebar h4:hover {
+  color: #333; /* Warna berubah saat hover */
+}
+
+/* Styling gambar di sebelah kanan */
+.lokasi-img {
+  float: right; /* Gambar berada di sebelah kanan */
+  margin: 0 0 10px 10px; /* Jarak antara gambar dan teks */
+  max-width: 100%; /* Membatasi gambar agar tidak melebihi card */
+  height: auto; /* Mengatur tinggi gambar agar proporsional */
+  border-radius: 8px; /* Sudut gambar melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan gambar */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus */
+  object-fit: cover; /* Memastikan gambar terpotong jika terlalu besar */
+}
+
+/* Interaksi hover pada gambar */
+.lokasi-img:hover {
+  transform: scale(1.05); /* Sedikit membesarkan gambar saat hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+/* List styles */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.sidebar ul li:hover {
+  transform: translateX(5px); /* Sedikit bergeser ke kanan saat hover */
+}
+
+.sidebar ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #333;
+  color: #fff;
+  padding-left: 15px; /* Efek padding saat hover */
+}
+
+/* Paragraph styles */
+.sidebar p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.8;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-left: 4px solid #333;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, border-left-color 0.3s ease;
+}
+
+.sidebar p:hover {
+  background-color: #e0e0e0;
+  border-left-color: #333;;
+}
+
+#HubungiKami h2 {
   text-align: center;
   border-bottom: none; /* Menghapus garis bawah khusus untuk "Hubungi Kami" */
-  padding-bottom: 0; /*Menghapus padding bawah jika tidak diperlukan */
+  padding-bottom: 0; /* Menghapus padding bawah jika tidak diperlukan */
 }
 
 footer {
@@ -200,79 +311,140 @@ footer p {
   font-size: 1.2em;
 }
 
+/* Responsive design untuk mobile */
+@media (max-width: 768px) {
+  .card-container {
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%; /* Sidebar akan menjadi lebar penuh di perangkat kecil */
+    max-width: 100%; /* Mencegah card melampaui lebar layar */
+  }
+}
+
+/* Responsif: Mengubah layout untuk layar kecil */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .card-container {
-      flex-direction: column; /* Stacks the cards vertically on smaller screens */
-      align-items: center;
+    flex-direction: column; /* Stacks the cards vertically on smaller screens */
+    align-items: center;
   }
 
   .card {
-      max-width: 100%; /* Takes full width in mobile view */
+    max-width: 100%; /* Takes full width in mobile view */
   }
-}
 
-
-/* Responsif: untuk layar di bawah 768px */
-@media (max-width: 768px) {
-  .card {
-      flex-direction: column; /* Pastikan tampilan tetap kolom */
-  }
-}
-
-/* Responsif: untuk layar di bawah 480px */
-@media (max-width: 480px) {
-  .card {
-      flex-direction: column; /* Tampilan tetap kolom di layar kecil */
-  }
-}
-
-/* Responsif */
-@media (max-width: 768px) {
   .nav-list ul li {
-    display: block;
-    /* Menampilkan item daftar secara vertikal pada layar kecil */
-    margin-bottom: 10px;
-    /* Jarak bawah untuk setiap item */
+    display: block; /* Menampilkan item daftar secara vertikal pada layar kecil */
+    margin-bottom: 10px; /* Jarak bawah untuk setiap item */
   }
 
   main {
-    padding: 10px;
-    /* Ruang di dalam konten pada layar kecil */
+    padding: 10px; /* Ruang di dalam konten pada layar kecil */
   }
 
   h1 {
-    font-size: 2em;
-    /* Ukuran font lebih kecil untuk judul pada layar kecil */
+    font-size: 2em; /* Ukuran font lebih kecil untuk judul pada layar kecil */
   }
 
   h2 {
-    font-size: 1.5em;
-    /* Ukuran font lebih kecil untuk subjudul pada layar kecil */
+    font-size: 1.5em; /* Ukuran font lebih kecil untuk subjudul pada layar kecil */
   }
-}
 
-
-@media (max-width: 768px) {
   .social-media ul {
-      flex-direction: row; /* Membuat elemen tersusun secara horizontal */
-      gap: 15px; /* Menjaga jarak antar ikon */
-      justify-content: center; /* Mengatur ikon berada di tengah secara horizontal */
-      align-items: center; /* Mengatur posisi vertikal ikon agar rata */
+    flex-direction: row; /* Membuat elemen tersusun secara horizontal */
+    gap: 15px; /* Menjaga jarak antar ikon */
+    justify-content: center; /* Mengatur ikon berada di tengah secara horizontal */
+    align-items: center; /* Mengatur posisi vertikal ikon agar rata */
   }
 }
 
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .sidebar:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .lokasi-img {
+    float: none;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+  }
+}
 
 @media (max-width: 480px) {
   #HubungiKami h2 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   .social-media a {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   footer p {
-      font-size: 1em;
+    font-size: 1em;
+  }
+}
+
+/* Gaya dasar untuk flex-container */
+.flex-container {
+  display: flex;                /* Mengaktifkan flexbox */
+  align-items: center;         /* Menyelaraskan item secara vertikal */
+  justify-content: space-between; /* Memberi ruang antara teks dan gambar */
+  padding: 20px;               /* Padding di sekeliling kontainer */
+}
+
+/* Gaya untuk teks */
+.flex-text {
+  margin-right: 10px;          /* Jarak antara teks dan gambar */
+  flex: 1;                     /* Memungkinkan teks untuk mengambil ruang yang tersedia */
+}
+
+/* Gaya untuk gambar */
+.flex-image {
+  max-width: 100%;            /* Mengatur lebar gambar agar responsif */
+  height: auto;                /* Menjaga proporsi gambar */
+}
+
+/* Responsif untuk tablet dan mobile */
+@media (max-width: 768px) {
+  .flex-container {
+      flex-direction: column;  /* Mengatur arah flex menjadi kolom pada layar kecil */
+      align-items: flex-start;  /* Menyelaraskan item ke kiri */
+  }
+
+  .flex-text {
+      margin-right: 0;         /* Menghapus margin kanan pada layar kecil */
+      margin-bottom: 10px;     /* Menambahkan jarak bawah untuk pemisahan */
+  }
+
+  .flex-image {
+      max-width: 100%;         /* Memastikan gambar tidak melebihi lebar kontainer */
+      width: 100%;             /* Memaksa gambar untuk mengambil lebar penuh kontainer */
   }
 }

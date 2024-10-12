@@ -8,8 +8,8 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
+  background-color: #f4f4f4;
 }
-
 
 .navbar-container {
   background-color: #333;
@@ -37,70 +37,43 @@ body {
   background-color: #575757;
   border-radius: 4px;
 }
-
-/* Gaya untuk konten utama */
-main {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.content {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 35px;
-}
-
-h2 {
-  font-size: 1.5em;
-  margin: 30px 0;
-  border-bottom: 2px solid #333;
-  padding-bottom: 10px;
-}
-
+/* Style Umum untuk Semua Perangkat */
 section {
-  margin-bottom: 60px;
+  padding: 20px;
+  text-align: center;
 }
 
-a {
-  color: #333;
+section h1, section h2 {
+  font-size: 2em;
 }
 
-a:hover {
-  text-decoration: underline;
+section img {
+  max-width: 100%;
+  height: auto;
 }
 
+section p {
+  line-height: 1.6;
+  text-align: justify;
+}
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 20px;
-  padding: 20px;
+  margin: 20px 0;
 }
 
 .card {
-  flex: 1 1 300px;
-  max-width: 300px;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  overflow: hidden;
+  background-color: #f4f4f4;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  overflow: hidden;
+  width: calc(33.333% - 20px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.card:hover {
-  transform: translateY(-10px);
+  justify-content: space-between;
 }
 
 .card-img {
@@ -111,97 +84,85 @@ a:hover {
 
 .card-content {
   padding: 15px;
-  text-align: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.card-content h2 {
+  font-size: 1.5em;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+.card-content p {
+  font-size: 1em;
+  text-align: justify;
 }
 
-/* Atur tata letak utama menggunakan Flexbox */
-.main-content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.content {
-  flex: 1;
-  margin-right: 20px;
-
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-  background-color: #f0f0f0;
-}
-/* Sidebar styling */
 .sidebar {
-  width: 300px;
+  background-color: #f4f4f4;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+  max-width: 500px; /* Lebar maksimal sidebar */
+  width: 100%; /* Lebar penuh hingga 500px */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-/* Gaya gambar di dalam aside */
-.lokasi-img {
-  max-width: 100%;            
-  height: auto;               
-  border-radius: 8px;        
-  margin-top: 15px;           
-}
-
-/* Responsif untuk tablet dan mobile */
-@media (max-width: 768px) {
-  .sidebar {
-      width: 100%;             
-  }
-}
-
-
-#HubungiKami h2 {
+.sidebar h3, .sidebar h4 {
   text-align: center;
-  border-bottom: none;
-  padding-bottom: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.lokasi-img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.content-area {
+  flex: 1 1 75%;
+  padding: 20px;
 }
 
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
-#HubungiKami h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
+footer a {
+  color: #1dbf73;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
   color: #f8f8f8;
-  border-bottom: none;
 }
 
 .social-media ul {
   list-style: none;
-  padding: 0;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -221,61 +182,21 @@ footer {
   color: #1dbf73;
 }
 
-footer a {
-  color: #1dbf73;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #f8f8f8;
-}
-
-footer p {
-  margin-top: 20px;
-  font-size: 1.2em;
-}
-
-@media (max-width: 768px) {
-  .card-container {
-    padding: 10px;
-  }
-
-  .sidebar {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
-  }
-
-  .content {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .sidebar {
-    width: 100%;
-  }
-}
-
+/* Responsif: Untuk layar tablet dan mobile */
 @media (max-width: 768px) {
   .card-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .card {
-    max-width: 100%;/
-  }
-
   .nav-list ul li {
     display: block;
     margin-bottom: 10px;
+  }
+
+  .sidebar, .content-area {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   main {
@@ -290,80 +211,171 @@ footer p {
     font-size: 1.5em;
   }
 
-  .social-media ul {
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100%;
-    position: relative;
-    transform: none;
-    box-shadow: none;
-  }
-
-  .sidebar:hover {
-    transform: none;
-    box-shadow: none;
-  }
-
-  .lokasi-img {
-    float: none;
-    display: block;
-    margin: 20px auto;
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  #HubungiKami h2 {
-    font-size: 1.5em;
-  }
-
-  .social-media a {
-    font-size: 1.5em;
-  }
-
-  footer p {
-    font-size: 1em;
-  }
-}
-
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.flex-text {
-  margin-right: 10px;
-  flex: 1;
-}
-
-.flex-image {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
   .flex-container {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .flex-text {
-    margin-right: 0;
-    margin-bottom: 10px;
+  .social-media ul {
+    gap: 15px;
+  }
+}
+
+
+/* Tampilan untuk Dekstop (lebar di atas 1024px) */
+@media (min-width: 1024px) {
+  section {
+    padding: 40px 0;
   }
 
-  .flex-image {
-    max-width: 100%;
-    width: 100%;
+  .sidebar {
+    max-width: 600px; /* Lebar lebih besar untuk dekstop */
+    padding: 30px;
+  }
+
+  .sidebar ul li a {
+    font-size: 1.2em;
+  }
+
+  .sidebar p {
+    font-size: 1.1em;
+  }
+}
+
+/* Tampilan untuk Tablet (lebar 768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  section {
+    padding: 30px 0;
+  }
+
+  .sidebar {
+    max-width: 80%; /* Sidebar lebih besar pada tablet */
+    padding: 20px;
+  }
+
+  .sidebar ul li a {
+    font-size: 1.1em;
+  }
+
+  .sidebar p {
+    font-size: 1em;
+  }
+}
+
+/* Tampilan untuk Mobile (lebar di bawah 768px) */
+@media (max-width: 767px) {
+  section {
+    padding: 20px 10px;
+  }
+
+  .sidebar {
+    max-width: 100%; /* Sidebar memenuhi lebar penuh di mobile */
+    padding: 15px;
+  }
+
+  .sidebar ul li a {
+    font-size: 1em;
+  }
+
+  .sidebar p {
+    font-size: 0.9em;
+  }
+}
+
+
+/* Desktop (min-width 1024px) */
+@media (min-width: 1024px) {
+  .card-container {
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: calc(30% - 20px); /* 3 cards per row */
+  }
+
+  section h1, section h2 {
+    font-size: 2.5em;
+  }
+
+  .card-content h2 {
+    font-size: 1.8em;
+  }
+
+  .card-content p {
+    font-size: 1.1em;
+  }
+}
+
+/* Tablet (min-width 768px and max-width 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  section {
+    padding: 30px;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(50% - 20px); /* 2 cards per row */
+  }
+
+  section h1, section h2 {
+    font-size: 2.2em;
+  }
+
+  .card-content h2 {
+    font-size: 1.6em;
+  }
+
+  .card-content p {
+    font-size: 1em;
+  }
+}
+
+/* Mobile (max-width 767px) */
+@media (max-width: 767px) {
+  section {
+    padding: 15px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%; /* 1 card per row */
+    margin-bottom: 20px;
+  }
+
+  section h1, section h2 {
+    font-size: 1.8em;
+  }
+
+  .card-content h2 {
+    font-size: 1.4em;
+  }
+
+  .card-content p {
+    font-size: 0.9em;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .social-media a {
+    font-size: 1.5em;
+  }
+  
+  footer p {
+    font-size: 1em;
   }
 }
